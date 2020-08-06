@@ -152,8 +152,8 @@ public class Bhaskara extends javax.swing.JFrame {
                 jLabel5.setText("<html>As raízes reais são <b>iguais</b>:<br>"
                         + "x1 = x2 = " + x1 + "</html>");
             } else {
-                double x1 = (-b + delta) / (2*a);
-                double x2 = (-b - delta) / (2*a);
+                double x1 = (-b + Math.sqrt(delta)) / (2*a);
+                double x2 = (-b - Math.sqrt(delta)) / (2*a);
                 jLabel5.setText("<html>As raízes reais são:<br>"
                         + "x1 = " + x1 + "; x2 = " + x2 + "</html>");
             }
